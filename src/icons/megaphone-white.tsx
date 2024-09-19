@@ -1,4 +1,4 @@
-export const MegaPhoneDuoToneWhite = () => {
+export const MegaPhoneWhite = () => {
   return (
     <svg
       width="24"

@@ -1,4 +1,4 @@
-export const BriefCaseDuoToneWhite = () => {
+export const BriefCaseWhite = () => {
   return (
     <svg
       width="24"

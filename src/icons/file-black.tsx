@@ -1,4 +1,4 @@
-export const FileDuoToneBlack = () => {
+export const FileBlack = () => {
   return (
     <svg
       width="24"

@@ -1,4 +1,4 @@
-export const ZapDouToneBlack = () => {
+export const ZapBlack = () => {
   return (
     <svg
       width="24"

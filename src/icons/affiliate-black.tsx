@@ -1,4 +1,4 @@
-export const AffiliateDuoToneBlack = () => {
+export const AffiliateBlack = () => {
   return (
     <svg
       width="24"

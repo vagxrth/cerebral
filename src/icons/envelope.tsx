@@ -1,4 +1,4 @@
-export const Envalope = () => {
+export const Envelope = () => {
   return (
     <svg
       width="24"
