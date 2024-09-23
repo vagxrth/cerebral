@@ -1,10 +1,10 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { CEREBRAL_CONSTANTS } from "@/constants"
 import { useNavigation } from "@/hooks/navigation"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
+import { CEREBRAL_CONSTANTS } from "../../../constants"
 
 type MenuProps = {
   orientation: "mobile" | "desktop"

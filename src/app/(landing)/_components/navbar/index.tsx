@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Logout } from "@/icons"
 import { MenuIcon } from "lucide-react"
 import Link from "next/link"
-import React from "react"
-// import Menu from "./menu"
+import Menu from "./menu"
 
 type Props = {}
 
@@ -12,7 +11,7 @@ const LandingPageNavbar = (props: Props) => {
   return (
     <div className="w-full flex justify-between sticky top-0 items-center py-5 z-50">
       <p className="font-bold text-2xl">Cerebral</p>
-      {/* <Menu orientation="desktop" /> */}
+      <Menu orientation="desktop" />
       <div className="flex gap-2">
         <Link href="/sign-in">
           <Button
@@ -31,7 +30,7 @@ const LandingPageNavbar = (props: Props) => {
             </Button>
           }
         >
-          {/* <Menu orientation="mobile" /> */}
+          <Menu orientation="mobile" />
         </GlassSheet>
       </div>
     </div>
