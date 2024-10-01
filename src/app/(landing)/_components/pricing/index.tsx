@@ -24,9 +24,9 @@ export const Pricing = (props: Props) => {
             </BackdropGradient>
             <Card className="p-7 mt-10 md:w-auto w-full bg-themeBlack border-themeGray">
                 <div className="flex flex-col gap-2">
-                    <CardTitle>₹99/month</CardTitle>
+                    <CardTitle>$29/month</CardTitle>
                     <CardDescription className="text-[#B4B0AE]">
-                        Great if you’re just getting started
+                        Affordable plan with essential features for individuals
                     </CardDescription>
                     <Link href="#" className="w-full mt-3">
                         <Button
