@@ -10,7 +10,7 @@ type Props = {}
 
 const OtpInput = dynamic(
   () =>
-    import("@/components/global/otp-input").then(
+    import("@/components/global/otp").then(
       (component) => component.default,
     ),
   { ssr: false },

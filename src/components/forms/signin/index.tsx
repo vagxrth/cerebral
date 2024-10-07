@@ -1,9 +1,9 @@
 "use client"
 
+import { CEREBRAL_CONSTANTS } from "@/app/constants"
 import { FormGenerator } from "@/components/global/form-generator"
 import { Loader } from "@/components/global/loader"
 import { Button } from "@/components/ui/button"
-import { CEREBRAL_CONSTANTS } from "@/constants"
 import { useAuthSignIn } from "@/hooks/authentication"
 
 type Props = {}
