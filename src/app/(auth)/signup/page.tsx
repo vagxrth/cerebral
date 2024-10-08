@@ -1,32 +1,27 @@
-import { onAuthenticatedUser } from "@/actions/auth"
-import BackdropGradient from "@/components/global/backdrop-gradient"
-import GlassCard from "@/components/global/glass-card"
-import { redirect } from "next/navigation"
+import SignUpForm from "@/components/forms/signup"
+import { GoogleAuthButton } from "@/components/global/google-oauth"
+import { Separator } from "@/components/ui/separator"
 
-type Props = {
-  children: React.ReactNode
-}
+type Props = {}
 
-const AuthLayout = async ({ children }: Props) => {
-  const user = await onAuthenticatedUser()
-
-  if (user.status === 200) redirect("/callback/sign-in")
-
+const SignUpPage = (props: Props) => {
   return (
-    <div className="container h-screen flex justify-center items-center">
-      <div className="flex flex-col w-full items-center py-24">
-        <h2 className="text-4xl font-bold text-themeTextWhite">Cerebral</h2>
-        <BackdropGradient
-          className="w-4/12 h-2/6 opacity-40"
-          container="flex flex-col items-center"
-        >
-          <GlassCard className="xs:w-full md:w-7/12 lg:w-5/12 xl:w-4/12 p-7 mt-16">
-            {children}
-          </GlassCard>
-        </BackdropGradient>
+    <>
+      <h5 className="font-bold text-base text-themeTextWhite">Sign Up</h5>
+      <p className="text-themeTextGray leading-tight">
+        Network with people from around the world, join groups, create your own,
+        watch courses and become the best version of yourself.
+      </p>
+      <SignUpForm />
+      <div className="my-10 w-full relative">
+        <div className="bg-black p-3 absolute text-themeTextGray text-xs top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          OR CONTINUE WITH
+        </div>
+        <Separator orientation="horizontal" className="bg-themeGray" />
       </div>
-    </div>
+      <GoogleAuthButton method="signup" />
+    </>
   )
 }
 
-export default AuthLayout
+export default SignUpPage
