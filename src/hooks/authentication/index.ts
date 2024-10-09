@@ -41,7 +41,7 @@ export const useAuthSignIn = () => {
         toast("Success", {
           description: "Welcome back!",
         })
-        router.push("/callback/sign-in")
+        router.push("/callback/signin")
       }
     } catch (error: any) {
       if (error.errors[0].code === "form_password_incorrect")
@@ -191,7 +191,7 @@ export const useGoogleAuth = () => {
       return signIn.authenticateWithRedirect({
         strategy,
         redirectUrl: "/callback",
-        redirectUrlComplete: "/callback/sign-in",
+        redirectUrlComplete: "/callback/signin",
       })
     } catch (error) {
       console.error(error)
