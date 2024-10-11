@@ -22,7 +22,7 @@ const SignInForm = (props: Props) => {
         />
       ))}
       <Button type="submit" className="rounded-2xl">
-        <Loader loading={isPending}>Sign In with Email</Loader>
+        <Loader loading={isPending}>Login with Email</Loader>
       </Button>
     </form>
   )
